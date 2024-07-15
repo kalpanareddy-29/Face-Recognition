@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <link rel="stylesheet" href="faces.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Recognition</h1>
+        <div class="video-container">
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="capture" onclick="captureImage()">Capture Image</button>
+        </div>
+        <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+        <img id="capturedImage" src="" alt="Captured Image" style="display:none;">
+        <button id="submit" onclick="submitImage()" style="display:none;">Submit Image</button>
+    </div>
+    <script src="facess.js"></script>
+</body>
+</html>
